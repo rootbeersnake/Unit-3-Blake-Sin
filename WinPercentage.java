@@ -18,7 +18,7 @@ public class WinPercentage{
       gamesWon = scan.nextInt();
     }
     while(gamesWon > gamesPlayed){
-      System.out.println("can't win more games than you played enter the wins");
+      System.out.println("can't win more games than you played. enter the wins");
       gamesWon = scan.nextInt();
     }
     double winPercent = (double) gamesWon/gamesPlayed;
