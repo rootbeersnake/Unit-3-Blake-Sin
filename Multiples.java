@@ -18,21 +18,39 @@ public class Multiples{
     int runs = 0;
     for(int i = 1; i <= limit/base; i++){
       if(runs == 5){
-        System.out.println("  ");
+        System.out.println(" ");
         runs = 0;
       }
       if(i*base<10){
-      System.out.print(i*base+"      ");
+      System.out.print(i*base+"          ");
       runs++;
     }else if(i*base<100){
-      System.out.print(i*base+"   ");
-    }else if(i*base<999){
+      System.out.print(i*base+"         ");
+      runs++;
+    }else if(i*base<1000){
+      System.out.print(i*base+"        ");
+      runs++;
+    }else if(i*base<10000){
       System.out.print(i*base+"       ");
       runs++;
-    }else if(i*base<9999){
+    }else if(i*base<100000){
+      System.out.print(i*base+"      ");
+      runs++;
+    }else if(i*base<1000000){
       System.out.print(i*base+"     ");
-    }else if(i*base<99999){
-      System.out.print(i*base+"     ");
+      runs++;
+    }else if(i*base<10000000){
+      System.out.print(i*base+"    ");
+      runs++;
+    }else if(i*base<100000000){
+      System.out.print(i*base+"   ");
+      runs++;
+    }else if(i*base<1000000000){
+      System.out.print(i*base+"  ");
+      runs++;
+    }else{
+      System.out.print(i*base+" ");
+      runs++;
     }
     }
   }
